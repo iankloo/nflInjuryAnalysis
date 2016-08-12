@@ -81,6 +81,8 @@ for(i in 1:nrow(injured)){
   injured$Team[i] <- statsDF$Team[which(injured$nameConvert[i] == statsDF$Player)][1]
 }
 
+write.csv(injured, 'injured.csv', row.names=FALSE)
+
 
 
 
